@@ -7,12 +7,13 @@
     */
 
     //Entrada
-    const numero = Number(prompt(`qual número deseja calcular a tabuada?`))
+    const numero = Number(prompt(`qual número deseja calcular a tabuada?`));
 
     //Processamento
-    
-
-
+    let multiplicador = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    for (const num of multiplicador) {
+        document.write(`${numero} * ${num} = ${num*numero}<br>`)
+    }
     //Saída
     
 </script>
