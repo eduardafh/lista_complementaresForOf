@@ -8,11 +8,18 @@
     */
 
     //Entrada
-
-
+    let lista = ["Branco", "Azul", "Marrom", "Cinza", "Verde", "Amarelo", "Vermelho", "Preto"];
+    let coresGosta = []
+ 
     //Processamento
-
+    for (let cores of lista) {
+        const gosta = prompt(`Vc gosta da cor ${cores}? Responda com S-Sim ou N-Nao`).trim().toUpperCase()
+        if (gosta == "S"){
+            coresGosta.push(cores)
+        }
+    }
 
     //Saída
+    alert(`Vc gosta das cores de ${coresGosta.length} q sao: ${coresGosta.join(", ")}`)
 
 </script>
